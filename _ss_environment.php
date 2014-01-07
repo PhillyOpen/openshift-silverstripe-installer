@@ -12,10 +12,9 @@ define('SS_DATABASE_SERVER', getenv('OPENSHIFT_MYSQL_DB_HOST'));
 define('SS_DATABASE_PORT', getenv('OPENSHIFT_MYSQL_DB_PORT'));
 define("SS_DATABASE_USERNAME", getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
 define('SS_DATABASE_PASSWORD', getenv('OPENSHIFT_MYSQL_DB_PASSWORD'));
-//define('SS_DEFAULT_ADMIN_USERNAME', 'admin');
-//define('SS_DEFAULT_ADMIN_PASSWORD', 'sw0rdfish');
+define('SS_DEFAULT_ADMIN_USERNAME', 'admin');
+define('SS_DEFAULT_ADMIN_PASSWORD', 'sw0rdfish');
 
 global $_FILE_TO_URL_MAPPING;
-$_FILE_TO_URL_MAPPING[getenv('OPENSHIFT_REPO_DIR').'php'] = 'http://parcel-maxglass.rhcloud.com/';
-$_FILE_TO_URL_MAPPING['/home/lloyd/glass/parcels/php'] = 'http://dst.emelle.us/';
+$_FILE_TO_URL_MAPPING['/Users/toby/trips/php'] = 'http://localhost:8888';
 
